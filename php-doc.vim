@@ -78,8 +78,10 @@ let g:pdv_cfg_CommentSingle = "//"
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
 let g:pdv_cfg_Version = "$id$"
-let g:pdv_cfg_Author = "Piotr Francuz <francuz256@gmail.com>"
-let g:pdv_cfg_Copyright = "e-fgs.pl"
+let g:pdv_cfg_Author = $AUTHOR "can be set in your .bashrc file: export AUTHOR=Marcin\ Szołtysek\ \<ms@vertis.pl\>
+"let g:pdv_cfg_Author = "Tobias Schlitt <toby@php.net>"
+let g:pdv_cfg_Copyright = "1997-2005 The PHP Group"
+let g:pdv_cfg_License = "PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}"
 
 let g:pdv_cfg_ReturnVal = "void"
 
@@ -423,6 +425,7 @@ func! PhpDocClass()
 	exe l:txtBOL . g:pdv_cfg_Commentn . "@version " . g:pdv_cfg_Version . g:pdv_cfg_EOL
 	exe l:txtBOL . g:pdv_cfg_Commentn . "@copyright " . g:pdv_cfg_Copyright . g:pdv_cfg_EOL
 	exe l:txtBOL . g:pdv_cfg_Commentn . "@author " . g:pdv_cfg_Author g:pdv_cfg_EOL
+	exe l:txtBOL . g:pdv_cfg_Commentn . "@license " . g:pdv_cfg_License . g:pdv_cfg_EOL
 
 	" Close the comment block.
 	exe l:txtBOL . g:pdv_cfg_CommentTail . g:pdv_cfg_EOL
