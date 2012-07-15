@@ -77,11 +77,10 @@ let g:pdv_cfg_CommentSingle = "//"
 " Default values
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
-let g:pdv_cfg_Version = "$id$"
-let g:pdv_cfg_Author = $AUTHOR "can be set in your .bashrc file: export AUTHOR=Marcin\ Szołtysek\ \<ms@vertis.pl\>
-"let g:pdv_cfg_Author = "Tobias Schlitt <toby@php.net>"
-let g:pdv_cfg_Copyright = "1997-2005 The PHP Group"
-let g:pdv_cfg_License = "PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}"
+let g:pdv_cfg_Version = "0.1"
+let g:pdv_cfg_Author = $AUTHOR
+let g:pdv_cfg_Copyright = $COPYRIGHT 
+let g:pdv_cfg_License = "PHP Version 5.3 {@link http://www.php.net/license/3_1.txt}"
 
 let g:pdv_cfg_ReturnVal = "void"
 
