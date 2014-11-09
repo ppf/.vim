@@ -1,0 +1,16 @@
+[user]
+  name = Piotr Francuz
+  email = francuz256@gmail.com
+[color]
+        ui = always
+[alias]
+        st = status
+        ci = commit
+        co = checkout
+        br = branch 
+[pack]
+	windowMemory = 100m
+	SizeLimit = 100m
+	threads = 1
+[core]
+	pager = less -r
