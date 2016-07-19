@@ -1,8 +1,6 @@
 "version 6.0
 " pathogen - plugin loader
 " @see http://mirnazim.org/writings/vim-plugins-i-use/
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
 
 source ~/.vim/php-doc.vim
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
